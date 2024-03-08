@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./assets/style.css -o ./src/style.css --watch",
+    "minify": "npx tailwindcss -i ./assets/style.css -o ./src/style.css --minify"
+  },
+  "dependencies": {
+    "vazirmatn": "^33.0.3"
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashbord</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-Vazir rtl flex">
+    <div
+      class="min-h-screen basis-1/5 bg-indigo-600 p-7 hidden xl:flex xl:flex-col overflow-y-scroll"
+      id="sideBar"
+    >
+      <div class="relative xl:hidden">
+        <i
+          class="fa-solid fa-xmark absolute top-[-7px] left-[-2px] text-xl text-slate-300 cursor-pointer"
+          id="closeBtn"
+          onclick="sideBarClose()"
+        ></i>
+      </div>
+      <div class="mb-10 flex">
+        <i class="fa-solid fa-ghost text-white text-4xl block"></i>
+        <span class="pr-5 text-white text-3xl block">GhostFace</span>
+      </div>
+      <div
+        class="text-lg flex items-center p-2 rounded-xl bg-indigo-700 text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-house px-3"></i>
+        <span>داشبورد</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-people-group px-3"></i>
+        <span>انجمن</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-folder px-3"></i>
+        <span>پروژه ها</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-calendar-days px-3"></i>
+        <span>تقویم</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-file px-3"></i>
+        <span>اسناد</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-ticket px-3"></i>
+        <span>گزارشات</span>
+      </div>
+      <div class="text-white mt-8 p-4">تیم های شما</div>
+      <div
+        class="text-slate-300 2xl:text-lg md:text-sm flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-users px-3"></i>
+        <span>تیم طراحی فرانت اند</span>
+      </div>
+      <div
+        class="text-slate-300 2xl:text-lg md:text-sm flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-users px-3"></i>
+        <span>تیم طراحی بک اند</span>
+      </div>
+      <div
+        class="text-slate-300 2xl:text-lg md:text-sm flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 cursor-pointer"
+      >
+        <i class="fa-solid fa-users px-3"></i>
+        <span>تیم طراحی رابط کاربری</span>
+      </div>
+      <div
+        class="text-slate-300 text-lg flex items-center p-2 rounded-xl hover:bg-indigo-700 hover:text-white transition-colors ease-linear mb-1 mt-8 cursor-pointer"
+      >
+        <i class="fa-solid fa-gear px-3"></i>
+        <span>تنظیمات</span>
+      </div>
+    </div>
+    <div class="w-[100%] xl:basis-4/5" id="main">
+      <nav
+        class="text-lg px-7 py-4 border-b border-gray-300 flex items-center relative"
+      >
+        <div class="items-center xl:hidden">
+          <i
+            class="fa-solid fa-bars text-2xl mx-3 p-1 text-gray-400 block cursor-pointer hover:shadow-xl hover:shadow-slate-300 transition-all ease-linear duration-500"
+            onclick="sideBar()"
+          ></i>
+        </div>
+        <i class="fa-solid fa-search text-gray-400 mr-5"></i>
+        <input
+          type="text"
+          placeholder="جستجو کنید .."
+          class="px-3 focus:border-none focus:outline-none font-extralight w-[30%]"
+        />
+        <div class="flex items-center absolute left-7">
+          <i
+            class="fa-solid fa-bell text-gray-400 cursor-pointer text-xl block"
+          ></i>
+          <div class="border-l border-gray-200 h-10 mx-7 ml-7"></div>
+          <i
+            class="fa-solid fa-user text-gray-400 cursor-pointer text-lg block bg-slate-200 p-2 rounded-2xl"
+          ></i>
+          <span class="mr-3 text-slate-700 min-w-max hidden 2xl:block"
+            >محمد احمدی</span
+          >
+        </div>
+      </nav>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/58ca1f98ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
